@@ -1,0 +1,52 @@
+
+Name: Raunak Agarwal
+Student Id: 1636678
+CMPUT 275 Winter 21
+Assignment 1: Part 2
+
+
+Files Included:
+
+In main folder:
+-server folder
+-client folder
+-makefile
+-README
+-edmonton-roads-2.0.1.txt
+
+In server Folder:
+-digraph.h
+-digraph.cpp
+-dijkstra.h
+-dijkstra.cpp
+-server.cpp
+-wdigraph.h
+-heap.h
+-edmonton-roads-2.0.1.txt
+
+In client Folder:
+-client.cpp
+
+Running Instructions:
+
+-After extracting the part2.zip folder, open a terminal in the main folder and write make.
+	This will create executables in the server and client folder.Open the terminals 
+	in the server folder and client folder, one in each. In the server folder's terminal, enter
+	./server [port]. In the client folder's terminal, enter ./client [port] [server ip address]
+	Thi will establish the connection between the server and client.
+	After this, in the main folder's terminal, enter ./plotter. This will open up the plotter.
+	You can select any 2 points on the plotter and it will show the way between them, if
+	it exists. It it does not, then the plotter will reset and you can select new points.
+	You can move around the plotter with "w" for up, "a" for left, "s" for down, "d" for right.
+	You can also zoom in and out using q and e respectively.
+	
+	To call the program from the main directory's terminal. Open a total of 3 terminals.
+	In the first one enter ./server/server [port]. In the second one enter
+	./client/client [port] [server ip address]. In the third enter ./plotter.
+	Please maintain this order to avoid any errors.
+
+	If you want to exit out of the program, just click x on the top right of the plotter and it will close the
+	connection between the client and server and, the extra files, which were opened by them 
+	will also shut down.
+
+	To get rid of all the executables, enter make clean in the main directory's terminal
